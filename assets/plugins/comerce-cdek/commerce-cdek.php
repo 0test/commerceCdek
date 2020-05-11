@@ -88,33 +88,33 @@ switch ($e->name) {
 		if ($processor->isOrderStarted() && $processor->getCurrentDelivery() == 'sdek') {
 			$data = getDeliveryFields($_REQUEST);
 			$markup = '
-					<div class="elBlock cart__item">
-						<div class="inputIcon required ui-widget">
+					<div class=" cart__item">
+						<div class=" required ui-widget">
 							<input type="text" id="cdek_city" class="form-control input required " placeholder="Город" name="city" value="' . (!empty($data['city']) ? htmlentities($data['city']) : '') . '">
 							<div class="inputIcon__item "></div>
 							<label for="receiver" class="inputIcon__icon city"></label>
 							[+city.error+]
 						</div>
-						<div class="inputIcon required">
+						<div class=" required">
 							<input type="text" class="form-control input required" placeholder="Улица" name="street" value="' . (!empty($data['street']) ? htmlentities($data['street']) : '') . '">
 							<div class="inputIcon__item "></div>
 							<label for="receiver" class="inputIcon__icon street"></label>
 							[+street.error+]
 						</div>
-						<div class="inputIcon required">
+						<div class=" required">
 							<input type="text" class="form-control input required" placeholder="Дом" name="house" value="' . (!empty($data['house']) ? htmlentities($data['house']) : '') . '">
 							<div class="inputIcon__item "></div>
 							<label for="receiver" class="inputIcon__icon house"></label>
 							[+house.error+]
 						</div>
-						<div class="inputIcon required">
+						<div class=" required">
 							<input type="text" class="form-control input required" placeholder="Кв" name="flat" value="' . (!empty($data['flat']) ? htmlentities($data['flat']) : '') . '">
 							<div class="inputIcon__item "></div>
 							<label for="receiver" class="inputIcon__icon flat"></label>
 							[+flat.error+]
 						</div>
 					</div>
-					<div class="elBlock cart__item">
+					<div class=" cart__item">
 						[+cdekMessages+]
 						<input type="hidden" name="cdek_zip" id="cdek_zip" value="' . (!empty($data['cdek_zip']) ? htmlentities($data['cdek_zip']) : '') . '">
 					</div>
