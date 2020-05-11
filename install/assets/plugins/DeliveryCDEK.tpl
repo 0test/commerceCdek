@@ -1,3 +1,5 @@
+require MODX_BASE_PATH. 'assets/plugins/commerce-cdek/commerce-cdek.php';
+
 /**
  * DeliveryCDEK
  *
@@ -17,4 +19,3 @@
 *
 ***********************************/
 
-require MODX_BASE_PATH. 'assets/plugins/commerce-cdek/commerce-cdek.php';
