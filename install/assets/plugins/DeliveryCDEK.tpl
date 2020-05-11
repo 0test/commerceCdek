@@ -1,4 +1,6 @@
 /**
+ * DeliveryCDEK
+ * Плагин для расчёт доставки СДЭК
  * @author			1px.su
  * @category		module
  * @version			1.0
